@@ -1,0 +1,29 @@
+{
+  "name": "js_ex1",
+  "version": "1.0.0",
+  "description": "First practice exercise with JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KasiaFernandes/JS_ex1.git"
+  },
+  "keywords": [
+    "js",
+    "grunt"
+  ],
+  "author": "Kasia Fernandes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KasiaFernandes/JS_ex1/issues"
+  },
+  "homepage": "https://github.com/KasiaFernandes/JS_ex1#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}

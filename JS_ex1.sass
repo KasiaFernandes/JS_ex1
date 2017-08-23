@@ -1,0 +1,57 @@
+$color-gold: #ffc107
+$color-orange: #fd7e33
+$color-blue: #3fb0ac
+
+=star($color)
+	border-color: $color
+	&:before
+		border-color: $color
+	&:hover,
+	&:hover:before,
+	&:hover .fa
+		background-color: $color
+		
+
+.star8 
+	display: inline-block
+	margin: 2em
+	transform: rotate(22deg)
+	transition: background-linear .3s
+	border: 6px solid
+	&:before 
+		background-color: white 
+		content: ""
+		position: absolute
+		top: -5px
+		left: -5px
+		transform: rotate(45deg)
+		border: 6px solid
+	&:hover,
+	&:hover:before,
+	&:hover .fa
+		transition: ease-in-out .3s
+		color: white
+	
+	
+.star8, .star8:before, .fa 
+	height: 80px 
+	width: 80px
+
+.gold
+	+star($color-gold)
+
+.orange
+	+star($color-orange)
+
+.blue
+	+star($color-blue)
+
+.fa 
+	margin: 0
+	position: absolute
+	background-color: white
+	font-size: 60px
+	&:before 
+		transform: rotate(-22deg)
+		position: absolute
+		margin: 10px

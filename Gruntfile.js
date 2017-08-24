@@ -18,13 +18,20 @@ module.exports = function(grunt) {
     },
       
     watch: {
-      scripts: {
+      styles: {
         files: ['*.sass'],
         tasks: ['sass'],
         options: {
             spawn: false,
          },
-       }   
+       },
+      scripts: {
+        files: ['js/*.js'],
+        tasks: ['jshint'],
+        options: {
+            spawn: false,
+         },
+       }       
      },
   });
 
